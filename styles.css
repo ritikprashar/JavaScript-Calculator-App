@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+}
+
+:root {
+  --blue: #181f32;
+  --gray: #647299;
+  --red: #d13f30;
+  --dark-gray: #3b4664;
+  --violet: #252d44;
+  --white: #eae3db;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: var(--dark-gray);
+}
+
+.calculator {
+  width: 25%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.8rem;
+}
+
+.display {
+  width: 100%;
+  height: 21%;
+}
+
+.user-input {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: right;
+  padding-right: 7%;
+  font-size: 3rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  overflow-x: scroll;
+}
+
+.keypad {
+  width: 100%;
+  height: 80%;
+  padding: 7%;
+  background-color: var(--violet);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.key {
+  background-color: var(--white);
+  width: 19%;
+  height: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete-key {
+  width: 19%;
+  height: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+  color: var(--white);
+  letter-spacing: 1.5px;
+}
+
+.reset-key,
+.answer-key {
+  width: 48%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  color: var(--white);
+}
+
+.reset-key {
+  background-color: var(--gray);
+  letter-spacing: 1.5px;
+}
+
+.answer-key {
+  background-color: var(--red);
+}
+
+.key:hover,
+.delete-key:hover,
+.reset-key:hover,
+.answer-key:hover {
+  cursor: pointer;
+}
